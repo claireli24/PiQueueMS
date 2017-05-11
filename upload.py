@@ -25,7 +25,7 @@ import json
 #
 # def buttons(i):
 #     i += 1
-#     fb = firebase.FirebaseApplication('https://rasppiqueuems.firebaseio.com/')
+#     fb = firebase.FirebaseApplication('https://firebaseio.com/')
 #
 #     varDate = arrow.now('Asia/Kuala_Lumpur').format('YYYY-MM-DD')
 #
@@ -71,7 +71,7 @@ class Application(tk.Frame):
 
     def buttons(self):
         self.btn_clicks += 1
-        fb = firebase.FirebaseApplication('https://rasppiqueuems.firebaseio.com/')
+        fb = firebase.FirebaseApplication('https://.firebaseio.com/')
 
         varDate = arrow.now('Asia/Kuala_Lumpur').format('YYYY-MM-DD')
         # varTime = arrow.now('Asia/Kuala_Lumpur').format('HH:mm:ss')
@@ -114,7 +114,7 @@ class Application(tk.Frame):
             # "Queue Number": self.btn_clicks
         })
 
-        os.startfile("C:/Users/Claire/PycharmProjects/PiQueueMS/toPrint/ticketPrint2.pdf", "print")
+        os.startfile("C://", "print")
 
 
 top = Tk()
